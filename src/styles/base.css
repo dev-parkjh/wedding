@@ -1,0 +1,56 @@
+:root {
+  --font-serif: 'Invitation Serif', 'Nanum Myeongjo', serif;
+  --font-sans: 'Invitation Sans', 'Pretendard', sans-serif;
+  color-scheme: light;
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  background: #e8e2da;
+}
+
+body {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+button,
+input {
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+button,
+a,
+input {
+  touch-action: manipulation;
+}
+
+input {
+  word-break: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  line-height: 1.6;
+  text-wrap: balance;
+}

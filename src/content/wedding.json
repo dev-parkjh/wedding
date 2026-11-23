@@ -1,0 +1,95 @@
+{
+  "couple": {
+    "groom": "박재현",
+    "bride": "박상은"
+  },
+  "families": {
+    "groom": {
+      "father": "박창근",
+      "mother": "박영희",
+      "relation": "장남"
+    },
+    "bride": {
+      "father": "박원호",
+      "mother": "유경희",
+      "relation": "차녀"
+    }
+  },
+  "ceremony": {
+    "date": "2027-02-14",
+    "time": "12:10"
+  },
+  "venue": {
+    "name": "웨딩시티",
+    "hall": "스타티스홀",
+    "floor": "8층",
+    "address": "서울특별시 구로구 새말로 97",
+    "addressDetail": "신도림테크노마트 8층",
+    "mapNaverUrl": "https://naver.me/5pNERn5Z",
+    "mapKakaoUrl": "https://place.map.kakao.com/326511102",
+    "venueUrl": "https://www.tmwedding.co.kr/location"
+  },
+  "invitation": {
+    "title": "서로의 평범한 하루가\n함께하고 싶은 일상이 되었습니다.",
+    "message": "그 설레는 시작에\n소중한 당신을 초대합니다."
+  },
+  "transport": {
+    "subway": {
+      "title": "지하철",
+      "primary": "1·2호선 신도림역 3번 출구 방향",
+      "detail": "테크노마트 지하 1층 연결 통로에서 8층으로 올라오세요."
+    },
+    "car": {
+      "title": "자동차",
+      "primary": "신도림테크노마트",
+      "detail": "지하 3–7층 주차장을 이용하실 수 있습니다."
+    }
+  },
+  "contacts": {
+    "groom": {
+      "number": "",
+      "confirmed": false
+    },
+    "bride": {
+      "number": "",
+      "confirmed": false
+    }
+  },
+  "accounts": {
+    "groom": [
+      {
+        "bank": "국민은행",
+        "holder": "박창근",
+        "number": "441501-01-081226",
+        "confirmed": true
+      },
+      {
+        "bank": "신한은행",
+        "holder": "박재현",
+        "number": "110-411-592980",
+        "kakaoPayUrl": "https://qr.kakaopay.com/Ej9CsR2Co",
+        "confirmed": true
+      }
+    ],
+    "bride": [
+      {
+        "bank": "농협은행",
+        "holder": "박원호",
+        "number": "485060-56-003076",
+        "confirmed": true
+      },
+      {
+        "bank": "농협은행",
+        "holder": "유경희",
+        "number": "351-0160-474073",
+        "confirmed": true
+      },
+      {
+        "bank": "국민은행",
+        "holder": "박상은",
+        "number": "455801-04-185733",
+        "confirmed": true
+      }
+    ]
+  }
+}
