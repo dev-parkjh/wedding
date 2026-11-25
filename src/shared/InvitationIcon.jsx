@@ -7,7 +7,30 @@ import MapPin from 'lucide-react/dist/esm/icons/map-pin.mjs';
 import Map from 'lucide-react/dist/esm/icons/map.mjs';
 import MessageCircle from 'lucide-react/dist/esm/icons/message-circle.mjs';
 import Send from 'lucide-react/dist/esm/icons/send.mjs';
-import TrainFront from 'lucide-react/dist/esm/icons/train-front.mjs';
+
+// Adapted from Lucide's TramFront with an undivided windshield.
+export function SubwayIcon({ size = 24, ...props }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <rect width="16" height="16" x="4" y="3" rx="2" />
+      <path d="M4 9h16" />
+      <path d="m8 19-2 3" />
+      <path d="m18 22-2-3" />
+      <path d="M8 14h.01" />
+      <path d="M16 14h.01" />
+    </svg>
+  );
+}
 
 const invitationIcons = {
   calendar: CalendarDays,
@@ -18,7 +41,7 @@ const invitationIcons = {
   map: Map,
   message: MessageCircle,
   send: Send,
-  subway: TrainFront,
+  subway: SubwayIcon,
 };
 
 export default function InvitationIcon({ name, className = '', fill = 'none' }) {

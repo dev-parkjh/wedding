@@ -42,9 +42,9 @@ function replaceTextSizeInUrl(textSize) {
 const CLASSIC_REVEAL_SELECTOR = [
   '.classic-summary h1',
   '.classic-summary-statement',
+  '.classic-couple-picture',
   '.classic-summary-details',
   '.classic-primary-actions',
-  '.classic-couple-picture',
   '.classic-greeting .classic-content',
   '.classic-heading-with-icon',
   '.classic-location-summary',
@@ -56,16 +56,21 @@ const CLASSIC_REVEAL_SELECTOR = [
 ].join(',');
 
 function CouplePicture() {
+  const [loading, setLoading] = useState(true);
+  const finishLoading = () => setLoading(false);
+
   return (
-    <picture className="classic-couple-picture">
+    <picture className="classic-couple-picture" data-classic-image-loading={loading}>
       <source srcSet={coupleWebp} type="image/webp" />
       <img
         src={couplePng}
         width={706}
         height={887}
         alt="꽃을 든 신랑과 신부 일러스트"
-        loading="lazy"
-        decoding="async"
+        loading="eager"
+        fetchPriority="high"
+        onLoad={finishLoading}
+        onError={finishLoading}
       />
     </picture>
   );

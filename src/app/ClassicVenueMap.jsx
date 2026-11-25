@@ -1,4 +1,5 @@
 import React from 'react';
+import { SubwayIcon } from '../shared/InvitationIcon.jsx';
 import weddingCityMark from './assets/wedding-city-mark.svg';
 
 /** The venue pin stays southwest of the station, as in the supplied print map. */
@@ -52,10 +53,7 @@ export default function ClassicVenueMap() {
 
         <g className="classic-map-station" transform="translate(332 174) scale(.85)">
           <circle r="18" />
-          <rect x="-8" y="-11" width="16" height="19" rx="3" />
-          <path d="M-6-4H6M-5 8l-4 6m14-6 4 6" />
-          <circle cx="-5" cy="4" r="1.5" />
-          <circle cx="5" cy="4" r="1.5" />
+          <SubwayIcon x={-14} y={-14} size={28} aria-hidden="true" focusable="false" />
         </g>
         <text className="classic-map-station-label" x="356" y="164">
           신도림역

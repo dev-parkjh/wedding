@@ -71,11 +71,6 @@
   color: var(--classic-ink);
 }
 
-.classic-invitation[data-reveal-ready='true'] [data-classic-reveal='waiting'] {
-  opacity: 0;
-  transform: translateY(28px);
-}
-
 .classic-invitation[data-reveal-ready='true'] [data-classic-reveal] {
   transition:
     opacity 440ms ease-out,
@@ -85,6 +80,12 @@
 .classic-invitation[data-reveal-ready='true'] [data-classic-reveal='visible'] {
   opacity: 1;
   transform: translateY(0);
+}
+
+.classic-invitation[data-reveal-ready='true'] [data-classic-reveal='waiting'],
+.classic-invitation[data-reveal-ready='true'] [data-classic-image-loading='true'] {
+  opacity: 0;
+  transform: translateY(28px);
 }
 
 .classic-invitation button {
@@ -361,7 +362,7 @@
   margin: 36px 0 0;
 }
 
-.classic-venue-map svg {
+.classic-venue-map > svg {
   display: block;
   width: 100%;
   height: auto;
@@ -447,23 +448,12 @@
   fill: var(--classic-accent);
 }
 
-.classic-map-station circle {
+.classic-map-station {
+  color: var(--classic-page);
+}
+
+.classic-map-station > circle {
   fill: var(--classic-action);
-}
-
-.classic-map-station rect,
-.classic-map-station path,
-.classic-map-station circle:not(:first-child) {
-  fill: none;
-  stroke: var(--classic-page);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-}
-
-.classic-map-station circle:not(:first-child) {
-  fill: var(--classic-page);
-  stroke: none;
 }
 
 .classic-map-station-label {
